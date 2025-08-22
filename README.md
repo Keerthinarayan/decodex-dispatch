@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# DECODEX - Capture The Signal
 
-## Project info
+## 🕵️‍♂️ About DECODEX
 
-**URL**: https://lovable.dev/projects/b79dba89-ab19-4dd6-b088-7a95ba8fe679
+**DECODEX** is a 24-hour flagship signal processing competition hosted by IEEE SPS Live Space. Step into the shadows of digital mysteries and unravel cryptic signals in this unique vintage-themed competition that challenges participants to decode, develop, and innovate.
 
-## How can I edit this code?
+## 🏆 Event Details
 
-There are several ways of editing your application.
+- **Event**: DECODEX - Capture The Signal
+- **Date**: September 20-21, 2025
+- **Duration**: 24-Hour Competition
+- **Location**: BMS Institute Of Technology & Management, Bengaluru
+- **Prize Pool**: ₹50,000
+- **Host**: IEEE SPS Live Space
 
-**Use Lovable**
+## 🚀 Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b79dba89-ab19-4dd6-b088-7a95ba8fe679) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clone the repository
+git clone https://github.com/Keerthinarayan/decodex-dispatch.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Navigate to the project directory
+cd decodex-dispatch
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8081`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+# Build the project
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview the production build
+npm run preview
+```
 
-## What technologies are used for this project?
+## 🛠️ Technologies Used
 
-This project is built with:
+This project is built with modern web technologies:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom vintage theme
+- **UI Components**: shadcn/ui components
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Animations**: Custom CSS animations with Tailwind
 
-## How can I deploy this project?
+## 🎨 Features
 
-Simply open [Lovable](https://lovable.dev/projects/b79dba89-ab19-4dd6-b088-7a95ba8fe679) and click on Share -> Publish.
+- **Immersive Hero Section**: Full-screen parallax effects with floating elements
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Vintage Aesthetic**: Custom color palette and typography
+- **Smooth Animations**: Staggered entrance animations and hover effects
+- **Professional Branding**: IEEE SPS integration and event information
 
-## Can I connect a custom domain to my Lovable project?
+## 📱 Pages
 
-Yes, you can!
+- **Hero**: Main landing page with event overview
+- **About**: Detailed information about the competition
+- **Timeline**: Event schedule and important dates
+- **Collaboration**: IEEE SPS partnership details
+- **FAQ**: Frequently asked questions
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🎯 Competition Overview
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+DECODEX challenges participants to:
+
+- Analyze mysterious signals hidden in the frequency domain
+- Master advanced DSP techniques and cryptanalysis methods
+- Collaborate with fellow detectives or compete solo
+- Earn recognition and prizes from IEEE SPS
+
+## 📞 Contact Information
+
+- **Email**: core.team@decodex.one
+- **Smriti**: +91 7389296975
+- **Chinmay**: +91 8618978745
+- **Organization**: IEEE SPS Live Space
+
+## 🤝 Contributing
+
+This project is specifically designed for the DECODEX competition. For any issues or suggestions related to the competition website, please contact the organizing team.
+
+## 📄 License
+
+This project is proprietary and created for IEEE SPS Live Space's DECODEX competition.
+
+## 🌟 Acknowledgments
+
+- IEEE SPS Live Space for hosting the competition
+- BMS Institute Of Technology & Management for venue support
+- All participants and organizers of DECODEX 2025
+
+---
+
+**Ready to decode the signal?** [Register Now](https://unstop.com) and join the investigation!
