@@ -1,4 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import timelineImage from "@/assets/timeline-scroll.jpg";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
@@ -57,26 +59,15 @@ const Timeline = () => {
 
   return (
     <div className="min-h-screen bg-gradient-vintage relative">
+      <Header />
+      
       {/* Background */}
       <div 
         className="fixed inset-0 opacity-10 bg-cover bg-center"
         style={{ backgroundImage: `url(${timelineImage})` }}
       />
       
-      {/* Navigation */}
-      <nav className="relative z-10 p-6 flex justify-between items-center border-b border-vintage-brass/30 bg-vintage-parchment/80 backdrop-blur-sm">
-        <Link to="/" className="text-2xl font-display font-bold text-vintage-sepia hover:text-vintage-gold transition-colors">
-          DECODEX
-        </Link>
-        <div className="flex space-x-6">
-          <Link to="/" className="text-vintage-brass hover:text-vintage-gold transition-colors font-medium">Home</Link>
-          <Link to="/about" className="text-vintage-brass hover:text-vintage-gold transition-colors font-medium">About</Link>
-          <Link to="/collaboration" className="text-vintage-brass hover:text-vintage-gold transition-colors font-medium">Collaboration</Link>
-          <Link to="/faq" className="text-vintage-brass hover:text-vintage-gold transition-colors font-medium">FAQ</Link>
-        </div>
-      </nav>
-      
-      <div className="relative z-10 container mx-auto px-6 py-12">
+      <div className="relative z-10 container mx-auto px-6 py-12 pt-32">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-display font-bold text-vintage-sepia mb-6">
@@ -165,6 +156,8 @@ const Timeline = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
