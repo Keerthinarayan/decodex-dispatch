@@ -1,112 +1,85 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
-import ieeeImage from "@/assets/ieee-vintage.jpg";
-import { Award, Users, Globe, BookOpen } from "lucide-react";
+import { Award, Users, Globe, BookOpen, Handshake } from "lucide-react";
 
 const Collaboration = () => {
+  const partners = [
+    {
+      name: "IEEE SPS Bangalore Branch",
+      logo: "https://imagizer.imageshack.com/img922/4906/SqkKwK.jpg"
+    },
+    {
+      name: "IEEE Student Branch",
+      logo: "https://imagizer.imageshack.com/img922/5916/bPX6yo.jpg"
+    },
+    {
+      name: "BMS Institute of Technology & Management",
+      logo: "https://imagizer.imageshack.com/img922/8858/quoUee.png"
+    },
+    {
+      name: "Institute Innovation Council (IIC)",
+      logo: "https://imagizer.imageshack.com/img922/8859/DTw5Tv.png"
+    },
+    {
+      name: "IEEE Bangalore Section",
+      logo: "https://live.staticflickr.com/65535/54543935199_b36c7d9072_z.jpg"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-vintage">
       <Header />
       
       <div className="container mx-auto px-6 py-12 pt-32">
-        {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-display font-bold text-vintage-sepia mb-6">
+        {/* Header with Enhanced Animation */}
+        <div className="text-center mb-20 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-display font-bold text-vintage-sepia mb-8 leading-tight animate-slide-up">
             In Collaboration With
           </h1>
-          <p className="text-xl text-vintage-brass max-w-3xl mx-auto">
-            Proudly organized by the prestigious IEEE Signal Processing Society Live Space, 
-            bringing together the finest minds in signal processing and digital communications.
+          <div className="w-24 h-1 bg-gradient-gold mx-auto mb-8 animate-slide-up" style={{animationDelay: '200ms'}}></div>
+          <p className="text-xl text-vintage-brass max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{animationDelay: '400ms'}}>
+            Together with these prestigious organizations, we create an unparalleled 
+            platform for innovation and learning in signal processing.
           </p>
         </div>
-        
-        {/* Main Collaboration Card */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <Card className="bg-vintage-parchment/90 border-vintage-gold shadow-golden hover:shadow-deep transition-all duration-300 animate-vintage-appear">
-            <CardHeader className="text-center pb-6">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-vintage">
-                <img 
-                  src={ieeeImage} 
-                  alt="IEEE SPS Live Space" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardTitle className="text-4xl font-display font-bold text-vintage-sepia mb-4">
-                IEEE SPS LIVE SPACE
-              </CardTitle>
-              <p className="text-lg text-vintage-brass">
-                Institute of Electrical and Electronics Engineers<br />
-                Signal Processing Society - Live Space Chapter
-              </p>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-vintage-sepia text-lg leading-relaxed mb-6">
-                The IEEE Signal Processing Society is the world's premier organization for signal 
-                processing engineers and researchers. With a rich heritage dating back to 1948, 
-                the SPS Live Space chapter continues this tradition of excellence in the digital age, 
-                fostering innovation and collaboration in signal processing, machine learning, 
-                and communications technologies.
-              </p>
-            </CardContent>
-          </Card>
+
+        {/* Partners Grid with Enhanced Animations */}
+        <div className="mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+            {partners.map((partner, index) => (
+              <Card 
+                key={index} 
+                className="bg-vintage-parchment/90 border-vintage-brass/30 shadow-vintage hover:shadow-golden transition-all duration-500 animate-vintage-appear group overflow-hidden" 
+                style={{animationDelay: `${index * 200}ms`}}
+              >
+                <CardHeader className="text-center pb-8 pt-8">
+                  <div className="w-44 h-44 mx-auto mb-6 rounded-xl overflow-hidden shadow-vintage bg-white p-6 group-hover:scale-105 transition-transform duration-500">
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name} 
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
+                    />
+                  </div>
+                  <CardTitle className="text-xl font-display font-semibold text-vintage-sepia group-hover:text-vintage-gold transition-colors duration-300">
+                    {partner.name}
+                  </CardTitle>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
         </div>
         
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {[
-            {
-              icon: Award,
-              title: "Excellence",
-              description: "Recognized globally for outstanding contributions to signal processing"
-            },
-            {
-              icon: Users,
-              title: "Community",
-              description: "Connecting thousands of professionals and researchers worldwide"
-            },
-            {
-              icon: Globe,
-              title: "Global Reach",
-              description: "International presence with local chapters in major cities"
-            },
-            {
-              icon: BookOpen,
-              title: "Education",
-              description: "Advancing knowledge through workshops, conferences, and competitions"
-            }
-          ].map((feature, index) => (
-            <Card key={index} className="bg-vintage-parchment/80 border-vintage-brass/30 shadow-vintage hover:shadow-golden transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 100}ms`}}>
-              <CardHeader className="text-center">
-                <feature.icon className="w-12 h-12 text-vintage-gold mx-auto mb-2" />
-                <CardTitle className="text-vintage-sepia font-display text-lg">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-vintage-brass text-sm text-center">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        {/* Partnership Details */}
-        <div className="max-w-3xl mx-auto text-center animate-fade-in">
-          <h2 className="text-3xl font-display font-semibold text-vintage-sepia mb-6">
+        {/* Minimalistic Features Section */}
+        <div className="max-w-4xl mx-auto text-center animate-fade-in" style={{animationDelay: '800ms'}}>
+          <div className="w-16 h-1 bg-gradient-gold mx-auto mb-12"></div>
+          <h2 className="text-3xl font-display font-semibold text-vintage-sepia mb-8">
             A Legacy of Innovation
           </h2>
-          <p className="text-vintage-brass text-lg leading-relaxed mb-8">
+          <p className="text-vintage-brass text-lg leading-relaxed">
             This collaboration brings together the time-honored traditions of scholarly pursuit 
-            with cutting-edge technology. Like the great detective stories of old, where 
-            observation meets deduction, IEEE SPS Live Space merges classical signal processing 
-            theory with modern computational techniques.
+            with cutting-edge technology, merging classical signal processing theory with modern computational techniques.
           </p>
-          <div className="border-t border-vintage-brass/30 pt-8">
-            <p className="text-vintage-sepia font-display font-medium">
-              "Advancing the theory and application of signal processing and fostering the 
-              scientific understanding of the field"
-            </p>
-            <p className="text-vintage-brass text-sm mt-2">IEEE Signal Processing Society Mission</p>
-          </div>
         </div>
       </div>
       
