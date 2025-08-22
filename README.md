@@ -1,4 +1,4 @@
-# DECODEX - Capture The Signal
+# DECODEX  Capture The Signal
 
 ## 🕵️‍♂️ About DECODEX
 
