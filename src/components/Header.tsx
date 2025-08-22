@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { VintageButton } from "@/components/ui/vintage-button";
-import { Menu, X, Search, BookOpen } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,17 +18,17 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-vintage-parchment/95 backdrop-blur-md border-b border-vintage-brass/30 shadow-vintage">
+    <header className="fixed top-0 w-full z-50 bg-vintage-parchment/70 backdrop-blur-sm border-b border-vintage-brass/20 shadow-vintage/50 animate-fade-in">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Search className="w-8 h-8 text-vintage-gold group-hover:rotate-12 transition-transform duration-300" />
-              <div className="absolute -inset-1 bg-vintage-gold/20 rounded-full blur group-hover:blur-md transition-all duration-300"></div>
+              <Search className="w-8 h-8 text-vintage-gold transition-transform duration-300 group-hover:rotate-12" />
+              <div className="absolute -inset-1 bg-vintage-gold/10 rounded-full blur transition-all duration-300 group-hover:bg-vintage-gold/20 group-hover:blur-md"></div>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-display font-bold text-vintage-sepia group-hover:text-vintage-leather transition-colors">
+              <span className="text-2xl font-display font-bold text-vintage-sepia transition-colors group-hover:text-vintage-leather">
                 DECODEX
               </span>
               <span className="text-xs text-vintage-brass font-medium tracking-wider">
@@ -49,10 +49,12 @@ const Header = () => {
                     : "text-vintage-brass hover:text-vintage-sepia"
                 }`}
               >
-                {item.name}
-                {isActive(item.href) && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-gold rounded-full"></div>
-                )}
+                <span className="relative inline-block">
+                  {item.name}
+                  <span className={`absolute left-0 -bottom-1 h-0.5 bg-gradient-gold transition-all duration-300 ${
+                    isActive(item.href) ? "w-full" : "w-0 group/link-hover:w-full"
+                  }`} />
+                </span>
               </Link>
             ))}
           </nav>
@@ -81,7 +83,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 border-t border-vintage-brass/30 animate-slide-up">
+          <div className="md:hidden py-6 border-top border-vintage-brass/20 animate-slide-up">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <Link
