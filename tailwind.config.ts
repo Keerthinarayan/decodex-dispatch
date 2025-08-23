@@ -135,6 +135,18 @@ export default {
 				'float-delayed-2': {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-25px)' }
+				},
+				'parallax-slow': {
+					'0%, 100%': { transform: 'translateY(0px) scale(1)' },
+					'50%': { transform: 'translateY(-10px) scale(1.02)' }
+				},
+				'parallax-medium': {
+					'0%, 100%': { transform: 'translateY(0px) scale(1)' },
+					'50%': { transform: 'translateY(-15px) scale(1.01)' }
+				},
+				'parallax-fast': {
+					'0%, 100%': { transform: 'translateY(0px) scale(1)' },
+					'50%': { transform: 'translateY(-20px) scale(1.03)' }
 				}
 			},
 			animation: {
@@ -146,7 +158,10 @@ export default {
 				'typewriter': 'typewriter 3s steps(40) infinite alternate',
 				'float-slow': 'float-slow 6s ease-in-out infinite',
 				'float-delayed': 'float-delayed 4s ease-in-out infinite 1s',
-				'float-delayed-2': 'float-delayed-2 5s ease-in-out infinite 2s'
+				'float-delayed-2': 'float-delayed-2 5s ease-in-out infinite 2s',
+				'parallax-slow': 'parallax-slow 8s ease-in-out infinite',
+				'parallax-medium': 'parallax-medium 6s ease-in-out infinite',
+				'parallax-fast': 'parallax-fast 4s ease-in-out infinite'
 			}
 		}
 	},
