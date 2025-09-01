@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Github, Mail, MapPin, Calendar, Phone, Sparkles, Star, Zap } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -94,10 +95,17 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex items-center space-x-2 group/item">
-                <MapPin className="w-4 h-4 text-vintage-gold group-hover/item:scale-110 transition-transform duration-300" />
-                <span className="text-sm text-vintage-smoke group-hover/item:text-vintage-parchment transition-colors duration-300">
-                  BMS Institute Of Technology & Management, Bengaluru
-                </span>
+                <a 
+                  href="https://maps.google.com/?q=BMS+Institute+Of+Technology+Management+Bengaluru" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 group/location hover:text-vintage-gold transition-colors duration-300"
+                >
+                  <MapPin className="w-4 h-4 text-vintage-gold group-hover/location:scale-110 transition-transform duration-300" />
+                  <span className="text-sm text-vintage-smoke group-hover/location:text-vintage-parchment transition-colors duration-300">
+                    BMS Institute Of Technology & Management, Bengaluru
+                  </span>
+                </a>
               </div>
             </div>
           </div>
@@ -129,12 +137,12 @@ const Footer = () => {
                 </a>
               </div>
               <div className="text-sm text-vintage-smoke group/contact">
-                <div className="font-medium group-hover/contact:text-vintage-gold transition-colors duration-300">Chinmay</div>
+                <div className="font-medium group-hover/contact:text-vintage-gold transition-colors duration-300">Deepak</div>
                 <a 
-                  href="tel:+918618978745" 
+                  href="tel:+917411730741" 
                   className="hover:text-vintage-gold transition-colors duration-300 group/phone relative overflow-hidden"
                 >
-                  <span className="relative z-10">+91 8618978745</span>
+                  <span className="relative z-10">+91 7411730741</span>
                   {/* Hover underline effect */}
                   <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-vintage-gold to-vintage-amber transition-all duration-300 group-hover/phone:w-full"></div>
                 </a>
@@ -147,7 +155,7 @@ const Footer = () => {
         <div className="mt-6 border-t border-vintage-brass/20 pt-4 flex flex-col sm:flex-row items-center justify-between text-vintage-smoke animate-fade-in relative" style={{animationDelay: '100ms'}}>
           {/* Live time display */}
           <div className="flex items-center gap-4 mb-2 sm:mb-0">
-            <p className="text-xs">© {currentYear} IEEE SPS Live Space</p>
+            <p className="text-xs">© {currentYear} IEEE Signal Processing Society</p>
             <div className="flex items-center gap-2 text-xs text-vintage-gold/70">
               <div className="w-1.5 h-1.5 bg-vintage-gold rounded-full animate-ping-slow"></div>
               <span>Live</span>
@@ -158,13 +166,14 @@ const Footer = () => {
             <span className="text-xs">Follow us:</span>
             <div className="flex space-x-2">
               {[
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Twitter, href: "#", label: "Twitter" },
-                { icon: Github, href: "#", label: "GitHub" }
+                { icon: Linkedin, href: "https://www.linkedin.com/in/ieeespsbmsitm/", label: "LinkedIn" },
+                { icon: Instagram, href: "https://www.instagram.com/sps_bmsit/", label: "Instagram" }
               ].map((social, index) => (
                 <a 
                   key={social.label}
-                  href={social.href} 
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-7 h-7 bg-vintage-leather/30 rounded-full flex items-center justify-center hover:bg-vintage-gold hover:text-vintage-sepia transition-all duration-300 group relative overflow-hidden"
                   style={{animationDelay: `${200 + index * 100}ms`}}
                 >
