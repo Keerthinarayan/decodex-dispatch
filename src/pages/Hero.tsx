@@ -97,17 +97,23 @@ const Hero = () => {
                 <div 
                   className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
                 >
-                  <span className="text-vintage-sepia font-medium text-sm">September 20-21, 2025</span>
+                  <span className="text-vintage-sepia font-bold text-sm relative">
+                    September 20-21, 2025
+                    <div className="absolute inset-0 bg-vintage-gold/10 rounded-lg animate-pulse"></div>
+                  </span>
                 </div>
                 <div 
-                  className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
+                  className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg relative overflow-hidden"
                 >
-                  <span className="text-vintage-brass font-medium text-sm">BMSITM, Bengaluru</span>
+                  <span className="text-vintage-brass font-bold text-sm relative z-10">BMSITM, Bengaluru</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-vintage-amber/5 to-vintage-gold/5 animate-pulse"></div>
                 </div>
                 <div 
-                  className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
+                  className="px-4 py-2 bg-gradient-to-r from-vintage-gold/20 to-vintage-amber/20 border-2 border-vintage-gold/50 rounded-lg backdrop-blur-sm hover:scale-110 transition-all duration-300 hover:shadow-golden relative overflow-hidden group"
                 >
-                  <span className="text-vintage-gold font-bold text-sm">₹50,000 Prize Pool</span>
+                  <span className="text-vintage-sepia font-bold text-sm relative z-10 drop-shadow-sm">₹50,000 Prize Pool</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-vintage-gold/30 to-vintage-amber/30 animate-pulse group-hover:animate-none"></div>
+                  <div className="absolute -inset-1 bg-vintage-gold/20 rounded-lg blur-sm animate-glow-pulse"></div>
                 </div>
               </div>
             </div>
