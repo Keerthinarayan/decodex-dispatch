@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: "What tools and software will I need?",
-      answer: "Two laptops per team. Yes, two. Why? Because when one laptop blue-screens mid-FFT, the other one becomes the hero Gotham deserves. Any OS works—Windows, Ubuntu, macOS… even if you dare with Arch Linux (but then you’re on your own)."
+      answer: "Two laptops per team. Yes, two. Why? Because when one laptop blue-screens mid-FFT, the other one becomes the hero Gotham deserves.At least one windows or ubuntu laptop, and the other Any OS works—Windows, Ubuntu, macOS… even if you dare with Arch Linux (but then you’re on your own)."
     },
     {
       question: "What types of challenges can I expect?",
@@ -78,7 +78,7 @@ const FAQ = () => {
             <div className="absolute inset-0 w-16 h-16 sm:w-20 sm:h-20 bg-vintage-gold/20 rounded-full animate-ping-slow"></div>
           </div>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-bold text-vintage-sepia mb-4 sm:mb-6 text-shadow-vintage leading-tight">
-            Detective's Handbook
+            Participant's Handbook
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-vintage-brass max-w-4xl mx-auto leading-relaxed px-4">
             Unravel the mysteries before the competition begins. Find answers to 
