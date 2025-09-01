@@ -25,53 +25,46 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is Decodex and who can participate?",
-      answer: "Decodex is a Capture The Signal competition focusing on digital signal processing, cryptanalysis, and pattern recognition. It's open to students, professionals, and enthusiasts in engineering, computer science, mathematics, and related fields. No specific prerequisites are required, though basic knowledge of signal processing concepts is helpful."
+      answer: "Decodex is basically a party where signals go to hide, and you have to find them. Anyone who loves breaking codes, crunching signals, or just wants bragging rights can join. Students, pros, or that one math nerd who thinks Fourier was underrated – all welcome!"
     },
     {
       question: "How do I register for the competition?",
-      answer: "Registration is available through Unstop platform. Simply click the 'Register on Unstop' button on our website, create an account if you don't have one, and complete the registration process. Early registration is recommended as spots are limited. You'll receive a confirmation email with your participant ID and further instructions."
+      answer: "Easy. Smash the 'Register on Unstop' button like you’re trying to get concert tickets. Make an account (if you don’t already live there), and boom—you’re in. Register early though, because FOMO is real. A confirmation email will arrive faster than you can say 'fast Fourier transform.'"
     },
     {
       question: "What tools and software will I need?",
-      answer: "Participants can use any programming language and tools they're comfortable with. Popular choices include Python with NumPy/SciPy, MATLAB, R, or even C/C++. We recommend having access to signal processing libraries, FFT implementations, and basic cryptographic tools. All challenges will be platform-agnostic. A stable internet connection and a modern web browser are required for the competition platform."
+      answer: "Two laptops per team. Yes, two. Why? Because when one laptop blue-screens mid-FFT, the other one becomes the hero Gotham deserves. Any OS works—Windows, Ubuntu, macOS… even if you dare with Arch Linux (but then you’re on your own)."
     },
     {
       question: "What types of challenges can I expect?",
-      answer: "Expect a variety of signal processing mysteries including frequency domain analysis, digital filter design, pattern recognition in noisy signals, cryptographic puzzles, steganography detection, and modulation scheme identification. Challenges increase in complexity through each round. Each challenge is designed to test both theoretical knowledge and practical implementation skills."
+      answer: "Expect brain-twisters like: ‘Is this noise, or my neighbor’s bad WiFi?’ You’ll decode signals, design filters, play detective with steganography, and maybe question your life choices when a sine wave looks like spaghetti. Difficulty levels: Easy, Medium, Crying-in-the-lab."
     },
     {
       question: "Is this competition team-based or individual?",
-      answer: "Both! You can participate individually or form teams of up to 3 members. Team collaboration is encouraged as it mirrors real-world signal processing work environments. Mixed teams from different institutions are welcome. Team registration must be completed together, and all team members must meet eligibility requirements."
+      answer: "Teams of 3 to 4 are encouraged. Think Avengers, but instead of saving the world, you’re saving signals from noise. Pro tip: recruit someone who knows how to order food quickly."
     },
     {
       question: "What are the prizes and recognition?",
-      answer: "Winners receive certificates from IEEE SPS, cash prizes, and recognition in the signal processing community. Top performers may also receive internship opportunities and invitations to IEEE SPS events. All participants receive participation certificates. Special awards are given for innovative solutions and creative approaches."
+      answer: "Winners get 50k INR, shiny certificates from IEEE SPS, and eternal bragging rights. Participation certs for everyone—because hey, showing up is half the battle. Extra brownie points for wild, creative, or meme-worthy solutions."
     },
     {
       question: "Do I need prior experience in competitive programming?",
-      answer: "While competitive programming experience is helpful, it's not mandatory. Decodex focuses more on signal processing knowledge, analytical thinking, and problem-solving skills rather than pure algorithmic speed. The vintage theme adds a unique twist to traditional challenges. We welcome participants of all experience levels."
-    },
-    {
-      question: "How are submissions evaluated?",
-      answer: "Submissions are evaluated based on correctness, efficiency, code quality, and approach creativity. Partial credit is awarded for partially correct solutions. Detailed explanations of your methodology can earn additional points. Judges include industry experts and academic professionals from the signal processing field."
-    },
-    {
-      question: "What is the competition schedule and format?",
-      answer: "The competition consists of three rounds: Qualifier (2 hours), Semi-Final (3 hours), and Final (4 hours). Each round features progressively challenging problems. The qualifier is online and open to all registered participants. Semi-finals and finals may have additional requirements and are conducted under strict supervision."
+      answer: "Nope. This isn’t about speed-typing code like a movie hacker. It’s about outsmarting signals, spotting patterns, and flexing those DSP muscles. Beginners, pros, and people who think Nyquist is a pastry—all are welcome."
     },
     {
       question: "Can I use external resources during the competition?",
-      answer: "During the competition, you may use standard documentation, textbooks, and online references. However, direct communication with other participants, using pre-written solutions, or accessing competition-specific resources is strictly prohibited. All submissions are checked for originality."
+      answer: "Yep! Google is your friend. StackOverflow is your therapist. Just don’t hire a psychic or ask ChatGPT to solve the entire thing for you… unless you bribe it with coffee."
     },
     {
       question: "What happens if I encounter technical issues?",
-      answer: "Technical support is available throughout the competition via our dedicated support channel. If you experience issues, immediately contact support with your participant ID and a description of the problem. We have backup systems and will ensure fair competition for all participants."
+      answer: "We’ve got tech support superheroes on standby. Just drop your participant ID, describe the issue, and we’ll fix it before your signal turns into static. Backup systems are ready, so don’t panic (yet)."
     },
     {
       question: "Are there practice materials available?",
-      answer: "Yes! We provide sample problems, tutorials, and practice challenges on our platform. These materials cover fundamental concepts and give you a feel for the competition format. We also host webinars and Q&A sessions with previous winners and organizers."
+      answer: "NOPE. We believe in the raw thrill of the unknown. No warm-up, no tutorials, just straight into the signal jungle. Think of it as DSP Hunger Games—may the odds be ever in your frequency."
     }
   ];
+  
 
   return (
     <div className="min-h-screen bg-gradient-vintage">
