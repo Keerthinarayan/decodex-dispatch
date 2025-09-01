@@ -2,7 +2,7 @@
 
 ## 🕵️‍♂️ About DECODEX
 
-**DECODEX** is a 24-hour flagship signal processing competition hosted by IEEE SPS Live Space. Step into the shadows of digital mysteries and unravel cryptic signals in this unique vintage-themed competition that challenges participants to decode, develop, and innovate.
+**DECODEX** is a 24-hour flagship event hosted by IEEE Signal Processing Society with prize pool of ₹50,000
 
 ## 🏆 Event Details
 
@@ -11,7 +11,7 @@
 - **Duration**: 24-Hour Competition
 - **Location**: BMS Institute Of Technology & Management, Bengaluru
 - **Prize Pool**: ₹50,000
-- **Host**: IEEE SPS Live Space
+- **Host**: IEEE Signal processing Society
 
 ## 🚀 Getting Started
 
@@ -90,7 +90,7 @@ DECODEX challenges participants to:
 - **Email**: core.team@decodex.one
 - **Smriti**: +91 7389296975
 - **Chinmay**: +91 8618978745
-- **Organization**: IEEE SPS Live Space
+- **Organization**: IEEE Signal processing Society
 
 ## 🤝 Contributing
 
@@ -98,11 +98,11 @@ This project is specifically designed for the DECODEX competition. For any issue
 
 ## 📄 License
 
-This project is proprietary and created for IEEE SPS Live Space's DECODEX competition.
+This project is proprietary and created for IEEE Signal processing Society DECODEX competition.
 
 ## 🌟 Acknowledgments
 
-- IEEE SPS Live Space for hosting the competition
+- IEEE Signal processing Society for hosting the competition
 - BMS Institute Of Technology & Management for venue support
 - All participants and organizers of DECODEX 2025
 
