@@ -156,9 +156,14 @@ const FAQ = () => {
                 from this extraordinary adventure.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <VintageButton variant="hero" size="lg" className="w-full sm:w-auto">
-                  Contact Support
-                </VintageButton>
+                <a 
+                  href="tel:+917411730741" 
+                  className="w-full sm:w-auto"
+                >
+                  <VintageButton variant="hero" size="lg" className="w-full">
+                    Contact Support
+                  </VintageButton>
+                </a>
                                  <Link to="/about" className="w-full sm:w-auto">
                    <VintageButton variant="detective" size="lg" className="w-full">
                      Learn More
