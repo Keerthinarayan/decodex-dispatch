@@ -5,9 +5,13 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Clock, Users, Trophy, FileText, Zap, Brain, Target, Sword, Eye, Crown, Award, Download, ExternalLink, Calendar, MapPin, Star, Shield, Zap as ZapIcon } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 const About = () => {
   const [scrollY, setScrollY] = useState(0);
+  
+  // Scroll to top when page loads
+  useScrollToTop();
 
   useEffect(() => {
     const handleScroll = () => {

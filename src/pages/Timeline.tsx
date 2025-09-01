@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 import timelineImage from "@/assets/timeline-scroll.jpg";
 import { Calendar, Clock, MapPin, Users, Star, Zap, Target, Crown, Award } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 const Timeline = () => {
   const [activeEvent, setActiveEvent] = useState<number | null>(null);
   const [scrollY, setScrollY] = useState(0);
+  
+  // Scroll to top when page loads
+  useScrollToTop();
 
   useEffect(() => {
     const handleScroll = () => {

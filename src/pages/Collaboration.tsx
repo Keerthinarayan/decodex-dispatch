@@ -2,8 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Award, Users, Globe, BookOpen, Handshake } from "lucide-react";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 const Collaboration = () => {
+  // Scroll to top when page loads
+  useScrollToTop();
+  
   const partners = [
     {
       name: "IEEE SPS Bangalore Branch",

@@ -5,9 +5,13 @@ import Footer from "@/components/Footer";
 import { VintageButton } from "@/components/ui/vintage-button";
 import { Link } from "react-router-dom";
 import { Search, Home } from "lucide-react";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 const NotFound = () => {
   const location = useLocation();
+  
+  // Scroll to top when page loads
+  useScrollToTop();
 
   useEffect(() => {
     console.error(
