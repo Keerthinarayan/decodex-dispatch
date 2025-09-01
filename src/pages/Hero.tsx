@@ -38,6 +38,7 @@ const Hero = () => {
             }}
           />
           {/* Multiple gradient layers for depth */}
+          <div className="absolute inset-0 backdrop-blur-sm bg-brown-800/5" />
           <div className="absolute inset-0 bg-gradient-to-br from-vintage-parchment/90 via-vintage-smoke/80 to-vintage-leather/75" />
           <div className="absolute inset-0 bg-gradient-to-t from-vintage-ink/20 via-transparent to-transparent" />
         </div>
@@ -48,86 +49,74 @@ const Hero = () => {
         </div>
         
         {/* Hero Content - With subtle parallax effects */}
-        <div className="relative z-10 container mx-auto px-6 flex items-center justify-center min-h-screen pt-32 pb-20">
+        <div className="relative z-10 container mx-auto px-6 flex items-center justify-center min-h-screen pt-20 pb-16">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             
-            {/* 1. SPS Logo - Enhanced with subtle parallax and fixed aspect ratio */}
+            {/* 1. SPS Logo - Further reduced margin-bottom */}
             <div 
-              className="mb-6 animate-vintage-appear" 
-              style={{
-                animationDelay: '100ms',
-                transform: `translateY(${scrollY * 0.05}px)` // Very subtle parallax for logo
-              }}
-            >
-              <div className="relative mx-auto w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40">
-                <img 
-                  src="https://i.imgur.com/kXd5V5O.png" 
-                  alt="IEEE SPS Logo" 
-                  className="w-full h-full object-contain opacity-90 hover:scale-110 transition-all duration-700 hover:opacity-100"
-                />
-              </div>
-            </div>
+  className="mb-0 animate-vintage-appear"
+  style={{
+    animationDelay: '100ms',
+    transform: `translateY(${scrollY * 0.05}px)`
+  }}
+>
+  <div className="relative mx-auto w-[160px] h-[160px] md:w-[180px] md:h-[180px] lg:w-[180px] lg:h-[180px]">
+    <img 
+      src="https://i.imgur.com/UFzdnS0.png" 
+      alt="IEEE SPS Logo" 
+      className="w-full h-full object-contain opacity-90 hover:scale-110 transition-all duration-700 hover:opacity-100"
+    />
+  </div>
+</div>
             
-            {/* 2. DECODEX Title - Enhanced with layered parallax */}
-            <h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-vintage-sepia mb-4 leading-tight animate-slide-up" 
+            {/* 2. DECODEX Logo - Tighter spacing */}
+            <div 
+               className="animate-slide-up -mt-4 mb-1"  // Adjusted margins for tighter spacing
               style={{
                 animationDelay: '200ms',
                 transform: `translateY(${scrollY * 0.08}px)` // Subtle parallax
               }}
             >
-              <span className="block hover:text-vintage-gold transition-colors duration-500 drop-shadow-lg">
-                DECODEX
-              </span>
-            </h1>
+              <img 
+                src="https://i.imgur.com/le3uKIO.png" 
+                alt="DECODEX Logo" 
+                className="mx-auto h-64 md:h-80 lg:h-96 object-contain hover:scale-105 transition-all duration-500 drop-shadow-lg"
+              />
+            </div>
             
-            {/* 3. Capture The Signal - With parallax */}
-            <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-vintage-brass mb-8 animate-slide-up" 
-              style={{
-                animationDelay: '300ms',
-                transform: `translateY(${scrollY * 0.06}px)` // Subtle parallax
-              }}
-            >
-              <span className="drop-shadow-md">Capture The Signal</span>
-            </h2>
+
             
-            {/* 4. Event Details - Enhanced with individual parallax */}
+            {/* 4. Event Details - Consistent spacing */}
             <div 
-              className="mb-8 animate-fade-in" 
+              className="mb-8 animate-fade-in"  // Consistent spacing
               style={{
-                animationDelay: '400ms',
-                transform: `translateY(${scrollY * 0.04}px)` // Very subtle parallax
+                animationDelay: '400ms'
               }}
             >
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <div 
                   className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
-                  style={{ transform: `translateY(${scrollY * 0.02}px)` }}
                 >
                   <span className="text-vintage-sepia font-medium text-sm">September 20-21, 2025</span>
                 </div>
                 <div 
                   className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
-                  style={{ transform: `translateY(${scrollY * 0.03}px)` }}
                 >
                   <span className="text-vintage-brass font-medium text-sm">BMSITM, Bengaluru</span>
                 </div>
                 <div 
                   className="px-4 py-2 bg-vintage-parchment/80 border border-vintage-brass/30 rounded-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-lg"
-                  style={{ transform: `translateY(${scrollY * 0.01}px)` }}
                 >
                   <span className="text-vintage-gold font-bold text-sm">₹50,000 Prize Pool</span>
                 </div>
               </div>
             </div>
             
-            {/* 5. Action Buttons - Enhanced with hover effects */}
+            {/* 5. Action Buttons - Consistent spacing */}
             <div 
               className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" 
               style={{
-                animationDelay: '500ms',
-                transform: `translateY(${scrollY * 0.02}px)` // Very subtle parallax
+                animationDelay: '500ms'
               }}
             >
               <a 
@@ -140,7 +129,6 @@ const Hero = () => {
                   variant="register" 
                   size="xl" 
                   className="group text-lg px-16 py-6 hover:scale-105 transition-all duration-500 hover:shadow-golden transform-gpu"
-                  style={{ transform: `translateY(${scrollY * 0.01}px)` }}
                 >
                   Register Now
                 </VintageButton>
@@ -150,7 +138,6 @@ const Hero = () => {
                   variant="ghost" 
                   size="lg" 
                   className="bg-vintage-parchment/80 hover:bg-vintage-parchment text-vintage-sepia border-vintage-brass/50 hover:border-vintage-brass px-16 py-6 hover:scale-105 transition-all duration-500"
-                  style={{ transform: `translateY(${scrollY * 0.015}px)` }}
                 >
                   Learn More
                 </VintageButton>

@@ -24,65 +24,52 @@ const Timeline = () => {
 
   const timelineEvents = [
     {
-      date: "January 15, 2025",
-      time: "10:00 AM",
+      date: "September 2, 2025",
+      time: "11:00 AM",
       title: "Registration Opens",
       description: "Begin your journey into the world of signal mysteries. Registration opens on Unstop.",
       icon: Users,
       status: "upcoming",
-      color: "from-vintage-gold/30 to-vintage-amber/20",
-      achievements: ["Early Bird Registration", "Team Formation", "Resource Access"]
+      color: "from-vintage-gold/30 to-vintage-amber/20"
     },
     {
-      date: "February 1, 2025",
+      date: "September 13, 2025",
       time: "6:00 PM",
-      title: "Opening Ceremony",
-      description: "Grand inauguration with keynote speakers from the world of cryptography and signal processing.",
+      title: "Qualifier Round",
+      description: "Qualifier round will be conducted on Unstop. The top 30 teams will qualify for the next round.",
       icon: MapPin,
       status: "upcoming",
-      color: "from-vintage-brass/30 to-vintage-gold/20",
-      achievements: ["Keynote Speeches", "Networking", "Event Overview"]
+      color: "from-vintage-brass/30 to-vintage-gold/20"
     },
     {
-      date: "February 2, 2025",
-      time: "9:00 AM",
-      title: "Round 1: The First Clue",
-      description: "Basic signal analysis challenges. Decode simple patterns and frequency domain mysteries.",
+      date: "September 20, 2025",
+      time: "10:00 AM",
+      title: "Opening Ceremony",
+      description: "Grand inauguration with keynote speakers from the world of cryptography and signal processing.",
       icon: Clock,
       status: "upcoming",
-      color: "from-vintage-amber/30 to-vintage-gold/20",
-      achievements: ["Basic Challenges", "Pattern Recognition", "Team Building"]
+      color: "from-vintage-amber/30 to-vintage-gold/20"
     },
     {
-      date: "February 5, 2025",
-      time: "2:00 PM",
-      title: "Round 2: Deep Investigation",
-      description: "Advanced cryptanalysis and complex signal processing challenges for qualified teams.",
-      icon: Clock,
-      status: "upcoming",
-      color: "from-vintage-sepia/30 to-vintage-brass/20",
-      achievements: ["Advanced Problems", "Cryptanalysis", "Signal Processing"]
-    },
-    {
-      date: "February 8, 2025",
+      date: "September 20 - 21, 2025",
       time: "11:00 AM",
-      title: "Final Round: Master Detective",
-      description: "The ultimate test of skill combining all aspects of signal processing and cryptography.",
+      title: "Manhattan Directive",
+      description: "The Manhattan Directive is the central theme of DecodeX 2025. Units will face time-bound decoding challenges that demand focus, logic, and collaboration.",
+      achievements: ["24-hour nonstop challenge", "Solve puzzles and decode transmissions", "Work as a unit to reach the final solution"],
       icon: Clock,
       status: "upcoming",
-      color: "from-vintage-gold/30 to-vintage-amber/20",
-      achievements: ["Ultimate Challenge", "Skill Integration", "Final Showdown"]
+      color: "from-vintage-sepia/30 to-vintage-brass/20"
     },
     {
-      date: "February 10, 2025",
-      time: "4:00 PM",
+      date: "September 21, 2025",
+      time: "11:00 AM",
       title: "Awards Ceremony",
       description: "Recognition of the finest signal processing detectives and closing celebration.",
       icon: Calendar,
       status: "upcoming",
-      color: "from-vintage-amber/30 to-vintage-gold/20",
-      achievements: ["Winner Recognition", "Prize Distribution", "Closing Celebration"]
+      color: "from-vintage-amber/30 to-vintage-gold/20"
     }
+    
   ];
 
   return (
@@ -130,7 +117,7 @@ const Timeline = () => {
         <div className="max-w-6xl mx-auto">
           <div className="relative">
             {/* Enhanced Timeline Line */}
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full">
+            <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full">
               <div className="w-full h-full bg-gradient-to-b from-vintage-gold via-vintage-brass to-vintage-sepia animate-pulse-subtle"></div>
               {/* Glowing effect */}
               <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-vintage-gold/20 via-vintage-brass/20 to-vintage-sepia/20 blur-sm animate-glow-pulse"></div>
@@ -152,7 +139,7 @@ const Timeline = () => {
                     onMouseLeave={() => setActiveEvent(null)}
                   >
                     {/* Enhanced Timeline Dot */}
-                    <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-r from-vintage-gold to-vintage-amber rounded-full border-4 border-vintage-parchment shadow-golden z-10 transition-all duration-500 group-hover:scale-125">
+                    <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-r from-vintage-gold to-vintage-amber rounded-full border-4 border-vintage-parchment shadow-golden z-10 transition-all duration-500 group-hover:scale-125">
                       <div className="w-full h-full bg-gradient-to-r from-vintage-brass to-vintage-gold rounded-full animate-pulse"></div>
                       {/* Active state glow */}
                       {isActive && (
@@ -161,7 +148,7 @@ const Timeline = () => {
                     </div>
                     
                     {/* Enhanced Event Card */}
-                    <div className={`w-full md:w-5/12 ml-20 md:ml-0 ${isEven ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
+                    <div className={`w-full md:w-5/12 ml-16 md:ml-0 ${isEven ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
                       <Card className={`bg-vintage-parchment/95 border-vintage-brass/40 shadow-vintage hover:shadow-golden transition-all duration-500 group/card overflow-hidden backdrop-blur-sm ${
                         isActive ? 'scale-105 border-vintage-gold/60' : ''
                       }`}>
@@ -185,19 +172,21 @@ const Timeline = () => {
                               <h3 className="text-xl font-display font-semibold text-vintage-sepia mb-3 group-hover/card:text-vintage-leather transition-colors duration-300">
                                 {event.title}
                               </h3>
-                              <p className="text-vintage-brass leading-relaxed mb-4">
-                                {event.description}
-                              </p>
-                              
-                              {/* Achievements list */}
-                              <div className="space-y-2">
-                                {event.achievements.map((achievement, idx) => (
-                                  <div key={idx} className="flex items-center gap-2 text-sm text-vintage-brass">
-                                    <div className="w-1.5 h-1.5 bg-vintage-gold rounded-full animate-ping-slow" style={{animationDelay: `${idx * 200}ms`}}></div>
-                                    <span>{achievement}</span>
-                                  </div>
-                                ))}
-                              </div>
+                                                             <p className="text-vintage-brass leading-relaxed mb-4">
+                                 {event.description}
+                               </p>
+                               
+                               {/* Achievements list - only show if achievements exist */}
+                               {event.achievements && (
+                                 <div className="space-y-2">
+                                   {event.achievements.map((achievement, idx) => (
+                                     <div key={idx} className="flex items-center gap-2 text-sm text-vintage-brass">
+                                       <div className="w-1.5 h-1.5 bg-vintage-gold rounded-full animate-ping-slow" style={{animationDelay: `${idx * 200}ms`}}></div>
+                                       <span>{achievement}</span>
+                                     </div>
+                                   ))}
+                                 </div>
+                               )}
                             </div>
                           </div>
                         </CardContent>

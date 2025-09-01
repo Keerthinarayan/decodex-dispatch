@@ -30,7 +30,7 @@ const About = () => {
     },
     {
       icon: Users,
-      title: "Teams of 3–4",
+      title: "Units of 3–4",
       description: "Collaborate and compete together",
       color: "from-vintage-brass/20 to-vintage-gold/10"
     },
@@ -44,43 +44,30 @@ const About = () => {
 
   const rounds = [
     {
-      title: "ROUND 1: PUZZLE RUSH",
-      date: "September 20, 2025",
-      time: "10:00 AM - 4:00 PM",
-      description: "Think fast. Solve faster. The game kicks off with a wild set of mind-melting puzzles a leaderboard based battle where every correct answer counts. Only the sharpest teams make it through",
+      title: "ROUND 1: QUALIFIER ROUND",
+      date: "September 13, 2025",
+      time: "11:00 PM to 11:00 AM",
+      description: "Qualifier round will be conducted on Unstop. The top 30 teams will qualify for the next round.",
       features: [
-        { icon: Zap, text: "Rapid-fire logic and puzzle challenges" },
+        { icon: Zap, text: "Online qualifier on Unstop platform" },
         { icon: Brain, text: "Focused on analytical thinking" },
-        { icon: Target, text: "Leaderboard based elimination" },
-        { icon: Award, text: "Only the top 50% move on" }
+        { icon: Target, text: "Competitive selection process" },
+        { icon: Award, text: "Top 30 teams advance to Manhattan Directive" }
       ],
       color: "from-vintage-amber/30 to-vintage-gold/20"
     },
     {
-      title: "ROUND 2: THE ALL-NIGHTER",
-      date: "September 20 - September 21, 2025",
-      time: "5:00 PM - 7:00 AM",
-      description: "It's midnight madness – where things get serious. This all-nighter throws challenging puzzles, conceptual problems, and a sprinkle of microcontroller-based logic games into the mix. Teamwork? Essential. Sleep? Optional.",
+      title: "ROUND 2: THE MANHATTAN DIRECTIVE",
+      date: "September 20 - 21, 2025",
+      time: "11:00 AM to 11:00 AM",
+      description: "DecodeX 2025 takes you inside a classified mission inspired by the Manhattan Project. Your directive: work in units of 3–4. Every solved piece brings you closer to the secret blueprint — the final key to completing your mission before time runs out.",
       features: [
-        { icon: Zap, text: "Higher-difficulty problems" },
-        { icon: Brain, text: "Mixed with microcontroller-based logics" },
-        { icon: Target, text: "Leaderboard based elimination" },
-        { icon: Award, text: "Only 16 teams survive to the final showdown" }
+        { icon: Zap, text: "24-hour nonstop challenge" },
+        { icon: Brain, text: "Time-bound decoding challenges" },
+        { icon: Target, text: "Solve puzzles and decode transmissions" },
+        { icon: Award, text: "Work as a unit to reach the final solution" }
       ],
       color: "from-vintage-sepia/25 to-vintage-brass/20"
-    },
-    {
-      title: "ROUND 3: THE FINAL STANDOFF",
-      date: "September 21, 2025",
-      time: "8:00 AM - 12:00 PM",
-      description: "It's bracket time. The top 16 clash in an intense head-to-head format. One-on-one matchups. Win or get eliminated. Only the smartest and fastest teams climb to the top.",
-      features: [
-        { icon: Sword, text: "1v1 bracket duels – lose and you're out" },
-        { icon: Eye, text: "No prior hardware knowledge required – just GPT-powered reasoning" },
-        { icon: Crown, text: "Top 3 emerge victorious" },
-        { icon: Trophy, text: "Glory, bragging rights, and ultimate CTS domination" }
-      ],
-      color: "from-vintage-gold/25 to-vintage-amber/20"
     }
   ];
 
@@ -97,8 +84,8 @@ const About = () => {
       title: "Event Flow",
       description: "Detailed schedule and round progression",
       icon: Calendar,
-      link: "#",
-      status: "coming-soon",
+      link: "https://drive.google.com/file/d/1ySzQYgQMykuw5aEkduBBr08ih8tgmpPl/view",
+      status: "available",
       color: "from-vintage-brass/20 to-vintage-gold/10"
     },
     {
@@ -127,13 +114,13 @@ const About = () => {
         {/* Enhanced Header Section */}
         <div className="text-center mb-16 md:mb-24 animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-vintage-sepia mb-6 md:mb-8 leading-tight animate-slide-up" style={{animationDelay: '200ms'}}>
-            Capture The Signal
+            About
           </h1>
           <div className="w-24 md:w-40 h-1 bg-gradient-gold mx-auto mb-6 md:mb-8 animate-slide-up" style={{animationDelay: '400ms'}}></div>
           <p className="text-lg md:text-xl text-vintage-brass max-w-4xl md:max-w-5xl mx-auto leading-relaxed animate-fade-in px-4 md:px-0" style={{animationDelay: '600ms'}}>
-            Capture The Signal is a fast-paced decoding challenge hosted by the IEEE Signal Processing Society. 
-            Use your signal processing skills to analyze, interpret, and decode hidden data from complex signals. 
-            <span className="block mt-2 md:mt-3 text-vintage-gold font-medium">Get ready to crack the code and prove your detective skills!</span>
+            DecodeX is a fast-paced decoding challenge hosted by the IEEE Signal Processing Society. 
+            Use your skills to analyze, interpret, and decode hidden data from complex signals. 
+            <span className="block mt-2 md:mt-3 text-vintage-gold font-medium">Step into the mission and prove your codebreaking edge!!!</span>
           </p>
         </div>
 
@@ -166,8 +153,8 @@ const About = () => {
             </h2>
             <div className="w-20 md:w-32 h-1 bg-gradient-gold mx-auto mb-6 md:mb-8"></div>
             <p className="text-lg md:text-xl text-vintage-brass max-w-3xl mx-auto leading-relaxed">
-              Three intense rounds of increasing difficulty. Each round tests different aspects of your 
-              signal processing and analytical skills.
+              Two challenging rounds that will test your signal processing and analytical skills. 
+              From online qualifiers to the intense Manhattan Directive challenge.
             </p>
           </div>
           
@@ -224,7 +211,7 @@ const About = () => {
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-gold mx-auto mb-6 md:mb-8"></div>
             <p className="text-lg md:text-xl text-vintage-brass max-w-3xl mx-auto leading-relaxed">
-              Access all the essential documents you need to participate in Capture The Signal. 
+              Access all the essential documents you need to participate . 
               Download and review these materials carefully before registration.
             </p>
           </div>
