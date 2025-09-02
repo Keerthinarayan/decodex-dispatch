@@ -60,7 +60,7 @@ const Footer = () => {
                 { to: "/about", text: "About" },
                 { to: "/timeline", text: "Timeline" },
                 { to: "/faq", text: "FAQ" },
-                { to: "https://unstop.com", text: "Register", external: true }
+                { to: "https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795", text: "Register", external: true }
               ].map((link, index) => (
                 <Link 
                   key={link.text}
