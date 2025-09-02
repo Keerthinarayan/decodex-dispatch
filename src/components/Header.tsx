@@ -58,10 +58,6 @@ const Header = () => {
                 {/* Glow effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-vintage-gold/20 to-vintage-amber/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
               </span>
-              <span className="text-xs text-vintage-brass font-medium tracking-wider transition-all duration-300 group-hover:text-vintage-gold group-hover:tracking-widest relative overflow-hidden">
-                <span className="relative z-10">CAPTURE THE SIGNAL</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-vintage-gold/20 to-vintage-amber/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </span>
             </div>
           </Link>
 
