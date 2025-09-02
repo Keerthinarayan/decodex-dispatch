@@ -88,7 +88,7 @@ const Header = () => {
           {/* Enhanced CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4 animate-cta-entrance">
             <a
-              href="https://unstop.com"
+              href="https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795"
               target="_blank"
               rel="noopener noreferrer"
               className="animate-cta-pulse group"
@@ -167,7 +167,7 @@ const Header = () => {
               {/* Enhanced Mobile CTA */}
               <div className="pt-4 animate-mobile-cta">
                 <a
-                  href="https://unstop.com"
+                  href="https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMenuOpen(false)}
