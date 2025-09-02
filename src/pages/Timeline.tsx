@@ -219,7 +219,7 @@ const Timeline = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="https://unstop.com" 
+                  href="https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-vintage-gold to-vintage-amber text-vintage-sepia font-display font-semibold rounded-xl shadow-deep hover:shadow-golden transition-all duration-300 hover:scale-105 group"
