@@ -275,7 +275,7 @@ const About = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
                 <a 
-                  href="https://unstop.com" 
+                  href="https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group"
