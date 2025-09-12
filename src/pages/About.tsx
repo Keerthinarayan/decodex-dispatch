@@ -46,7 +46,7 @@ const About = () => {
     {
       title: "ROUND 1: QUALIFIER ROUND",
       date: "September 13, 2025",
-      time: "11:00 PM to 11:00 AM",
+      time: "12:00 PM to 11:00 PM",
       description: "Qualifier round will be conducted on Unstop. The top 30 teams will qualify for the next round.",
       features: [
         { icon: Zap, text: "Online qualifier on Unstop platform" },
