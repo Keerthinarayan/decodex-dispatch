@@ -2,6 +2,7 @@ import { VintageButton } from "@/components/ui/vintage-button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ResultsPopup from "@/components/ResultsPopup";
 import heroImage from "@/assets/hero-detective.jpg";
 import { useEffect, useState } from "react";
 import { useScrollToTop } from "@/hooks/use-scroll-to-top";
@@ -24,6 +25,7 @@ const Hero = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <ResultsPopup />
       
       {/* Hero Section - Full Screen Immersive with Enhanced Parallax */}
       <section className="relative min-h-screen overflow-hidden">
