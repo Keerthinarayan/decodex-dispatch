@@ -58,6 +58,7 @@ const Footer = () => {
             <div className="flex flex-col space-y-2">
               {[
                 { to: "/about", text: "About" },
+                { to: "/results", text: "Results" },
                 { to: "/timeline", text: "Timeline" },
                 { to: "/faq", text: "FAQ" },
                 { to: "https://unstop.com/p/decodex-2025-encrypted-classified-unlocked-bms-institute-of-technology-and-management-bmsitm-bangalore-1546795", text: "Register", external: true }
