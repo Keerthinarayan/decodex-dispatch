@@ -36,20 +36,20 @@ const Results = () => {
 
   // Confirmed teams data
   const confirmedTeams = [
-    { slNo: 1, teamName: "Bunch of Bugs", membersCount: 4, leaderName: "Priyanshu Raj" },
-    { slNo: 2, teamName: "MetaBlaze", membersCount: 3, leaderName: "Vijay V" },
-    { slNo: 3, teamName: "The Debug Ninjas", membersCount: 4, leaderName: "Vinod S Sambrani" },
-    { slNo: 4, teamName: "Think 4ward", membersCount: 4, leaderName: "Kowshik Rao" },
-    { slNo: 5, teamName: "Team LexAI", membersCount: 4, leaderName: "Banavathu Yoganandha" },
-    { slNo: 6, teamName: "Puzzlebyte", membersCount: 4, leaderName: "Sparsha Swaminathan" },
-    { slNo: 7, teamName: "Signotech", membersCount: 4, leaderName: "B Suraj" },
-    { slNo: 8, teamName: "Code Blooded", membersCount: 3, leaderName: "Pranaya S K" },
-    { slNo: 9, teamName: "TeraBhaiHacker", membersCount: 4, leaderName: "Farhan Ahmed" },
-    { slNo: 10, teamName: "Infinitech", membersCount: 4, leaderName: "Sanath R" },
-    { slNo: 11, teamName: "Nexus", membersCount: 4, leaderName: "Tanushrii" },
-    { slNo: 12, teamName: "Stark Coders", membersCount: 4, leaderName: "Sisir Nellore" },
-    { slNo: 13, teamName: "Code Red", membersCount: 4, leaderName: "S Vinay" }
-    
+    { slNo: 1, teamName: "Bunch of Bugs", leaderName: "Priyanshu Raj" },
+    { slNo: 2, teamName: "MetaBlaze",  leaderName: "Vijay V" },
+    { slNo: 3, teamName: "The Debug Ninjas", leaderName: "Vinod S Sambrani" },
+    { slNo: 4, teamName: "Think 4ward",  leaderName: "Kowshik Rao" },
+    { slNo: 5, teamName: "Team LexAI",  leaderName: "Banavathu Yoganandha" },
+    { slNo: 6, teamName: "Puzzlebyte",  leaderName: "Sparsha Swaminathan" },
+    { slNo: 7, teamName: "Signotech", leaderName: "B Suraj" },
+    { slNo: 8, teamName: "Code Blooded",  leaderName: "Pranaya S K" },
+    { slNo: 9, teamName: "TeraBhaiHacker", leaderName: "Farhan Ahmed" },
+    { slNo: 10, teamName: "Infinitech",  leaderName: "Sanath R" },
+    { slNo: 11, teamName: "Nexus", leaderName: "Tanushrii" },
+    { slNo: 12, teamName: "Stark Coders",  leaderName: "Sisir Nellore" },
+    { slNo: 13, teamName: "Code Red",  leaderName: "S Vinay" },
+    { slNo: 14, teamName: "Byte Buzz",  leaderName: "Vinaykumar bhavimani" }
   ];
 
   const getRankIcon = (slNo: number) => {
@@ -102,7 +102,7 @@ const Results = () => {
               Confirmed Qualified Teams
             </h2>
             <p className="text-vintage-brass text-base sm:text-lg">
-              Listed in order of qualification
+              Listed in no particular order of qualification… because ranking things is overrated
             </p>
           </div>
 
@@ -129,10 +129,6 @@ const Results = () => {
                         </h3>
                         <div className="flex flex-wrap items-center gap-3">
                           <div className="flex items-center gap-1 text-sm text-vintage-brass bg-vintage-smoke/50 px-2 py-1 rounded-full border border-vintage-brass/20">
-                            <Users className="w-4 h-4" />
-                            <span>{team.membersCount} Members</span>
-                          </div>
-                          <div className="flex items-center gap-1 text-sm text-vintage-brass bg-vintage-smoke/50 px-2 py-1 rounded-full border border-vintage-brass/20">
                             <User className="w-4 h-4" />
                             <span>Leader: {team.leaderName}</span>
                           </div>
@@ -145,48 +141,48 @@ const Results = () => {
             ))}
           </div>
 
-          {/* Pending Confirmation Message */}
-          <Card className="bg-gradient-to-br from-vintage-parchment/90 to-vintage-smoke/80 border-vintage-amber/40 shadow-amber mb-12">
+          {/* Pending Confirmation Message - Highlighted */}
+          <Card className="bg-gradient-to-br from-vintage-amber/20 to-vintage-gold/20 border-2 border-vintage-amber shadow-amber-glow mb-12 transform transition-all duration-300 hover:scale-[1.01]">
             <CardContent className="p-6 sm:p-8">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-vintage-amber/20 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-vintage-amber/30 rounded-full mb-4 animate-pulse">
                   <Sparkles className="w-8 h-8 text-vintage-amber" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-vintage-sepia mb-4">
                   More Teams to be Confirmed
                 </h3>
-                <p className="text-vintage-brass text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-                  Could we announce the 30 teams now? Absolutely. Will we? Not until we’ve milked this suspense just a little longer. Hang tight.
+                <p className="text-vintage-brass text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
+                  Could we announce the 30 teams now? Absolutely. Will we? Not until we've milked this suspense just a little longer. Hang tight.
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
 
-        {/* Event Details Card - Moved after the confirmation message */}
+        {/* Event Details Card - Highlighted */}
         <div className="max-w-4xl mx-auto mb-12 sm:mb-16 animate-slide-up">
-          <Card className="bg-gradient-to-br from-vintage-parchment/90 to-vintage-smoke/80 border-vintage-gold/40 shadow-golden">
+          <Card className="bg-gradient-to-br from-vintage-gold/15 to-vintage-amber/10 border-2 border-vintage-gold/60 shadow-golden-glow transform transition-all duration-300 hover:scale-[1.01]">
             <CardContent className="p-6 sm:p-8">
               <div className="text-center mb-6">
                 <h2 className="text-2xl sm:text-3xl font-display font-bold text-vintage-sepia mb-4">
                   Round 2: The Manhattan Directive
                 </h2>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-vintage-brass">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-vintage-brass font-medium">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-5 h-5 text-vintage-gold" />
-                    <span className="font-medium">September 20-21, 2025</span>
+                    <span>September 20-21, 2025</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-5 h-5 text-vintage-gold" />
-                    <span className="font-medium">BMSITM, Bengaluru</span>
+                    <span>BMSITM, Bengaluru</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-5 h-5 text-vintage-gold" />
-                    <span className="font-medium">24-Hour Challenge</span>
+                    <span>24-Hour Challenge</span>
                   </div>
                 </div>
               </div>
-              <p className="text-vintage-brass text-center leading-relaxed">
+              <p className="text-vintage-brass text-center leading-relaxed font-medium">
                 The qualified teams will face the ultimate 24-hour signal processing challenge. 
                 Prepare for intense decoding, collaborative problem-solving, and the race to unlock the final blueprint.
               </p>
