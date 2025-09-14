@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { VintageButton } from "@/components/ui/vintage-button";
-import { Menu, X, Search, Home, Info, Clock, Users, HelpCircle, ExternalLink } from "lucide-react";
+import { Menu, X, Search, Home, Info, Clock, Users, HelpCircle, ExternalLink, Trophy } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,6 +24,7 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "/", icon: Home },
     { name: "About", href: "/about", icon: Info },
+    { name: "Results", href: "/results", icon: Trophy },
     { name: "Timeline", href: "/timeline", icon: Clock },
     { name: "Collaboration", href: "/collaboration", icon: Users },
     { name: "FAQ", href: "/faq", icon: HelpCircle },
