@@ -15,7 +15,8 @@ import {
   Sparkles,
   Target,
   Zap,
-  User
+  User,
+  AlertTriangle
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useScrollToTop } from "@/hooks/use-scroll-to-top";
@@ -173,23 +174,34 @@ const Results = () => {
           {/* Pending Teams Section */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {/* Teams Yet to be Confirmed */}
-            <Card className="bg-gradient-to-br from-vintage-parchment/90 to-vintage-smoke/80 border-vintage-amber/40 shadow-amber">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-xl font-display text-vintage-sepia flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-vintage-amber" />
+            <Card className="bg-gradient-to-br from-amber-100/80 to-amber-200/60 border-amber-400/60 shadow-amber relative overflow-hidden">
+              {/* Highlight effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 to-transparent animate-pulse"></div>
+              
+              <CardHeader className="pb-3 relative z-10">
+                <CardTitle className="text-xl font-display text-amber-900 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-amber-600" />
                   Teams Yet to be Confirmed
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
+                <div className="mb-4 p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+                  <p className="text-sm text-amber-800 flex items-start gap-2">
+                    <AlertTriangle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Important:</strong> Team leaders are yet to confirm their participation. Failure to provide confirmation will result in disqualification, and the spot will be offered to teams on the waiting list.
+                    </span>
+                  </p>
+                </div>
                 <div className="space-y-3">
                   {pendingTeams.map((team, index) => (
-                    <div key={index} className="flex items-center justify-between py-2 border-b border-vintage-brass/20 last:border-b-0">
+                    <div key={index} className="flex items-center justify-between py-2 border-b border-amber-400/30 last:border-b-0 bg-amber-50/50 rounded-lg px-3">
                       <div>
-                        <h4 className="font-medium text-vintage-sepia">{team.teamName}</h4>
-                        <p className="text-sm text-vintage-brass">Leader: {team.leaderName}</p>
+                        <h4 className="font-medium text-amber-900">{team.teamName}</h4>
+                        <p className="text-sm text-amber-700">Leader: {team.leaderName}</p>
                       </div>
-                      <div className="text-xs px-2 py-1 bg-vintage-amber/20 text-vintage-amber rounded-full">
-                        Pending
+                      <div className="text-xs px-2 py-1 bg-amber-500/20 text-amber-800 rounded-full border border-amber-500/30">
+                        Confirmation Pending
                       </div>
                     </div>
                   ))}
@@ -206,6 +218,11 @@ const Results = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="mb-4 p-3 bg-vintage-brass/10 border border-vintage-brass/30 rounded-lg">
+                  <p className="text-sm text-vintage-brass">
+                    These teams will be offered qualification if any confirmed teams drop out or if pending teams don't confirm their participation. (Results are posted for the Top 50 teams)
+                  </p>
+                </div>
                 <div className="space-y-3">
                   {waitingListTeams.map((team, index) => (
                     <div key={index} className="flex items-center justify-between py-2 border-b border-vintage-brass/20 last:border-b-0">
