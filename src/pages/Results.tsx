@@ -64,12 +64,12 @@ const Results = () => {
     { slNo: 25, teamName: "Algoriders", leaderName: "Gnanashree J" },
     { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" },
     { slNo: 27, teamName: "Cool", leaderName: "M Kishore" },
+    { slNo: 28, teamName: "InnoSphere", leaderName: "Priya M" },
   ];
 
   // Teams yet to be confirmed
   const pendingTeams = [
     { teamName: "Innovatehers", leaderName: "Spandana" },
-    { teamName: "InnoSphere", leaderName: "Priya M" },
     { teamName: "Misal", leaderName: "Ishaan Chepurwar" }
   ];
 
