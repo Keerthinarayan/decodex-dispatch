@@ -79,8 +79,7 @@ const Results = () => {
     { teamName: "Tech team", leaderName: "SHREYAS SHINDE" },
      { teamName: "Codesquad", leaderName: "Madhumitha S" },
     { teamName: "Astrobleme", leaderName: "Nilanjan Sau" },
-    { teamName: "Codesquad", leaderName: "Madhumitha S" },
-    { teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" }
+    { teamName: "Codesquad", leaderName: "Madhumitha S" }
   ];
 
   const getRankIcon = (slNo: number) => {
