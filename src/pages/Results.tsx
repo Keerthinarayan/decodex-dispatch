@@ -58,28 +58,29 @@ const Results = () => {
     { slNo: 19, teamName: "Quadcore Brains", leaderName: "Mokshith R" },
     { slNo: 20, teamName: "Illu-Minaati", leaderName: "Kushal Raj G S" },
     { slNo: 21, teamName: "Nexus", leaderName: "Tanushrii" },
-    { slNo: 22, teamName: "Code Red", leaderName: "S Vinay" }
+    { slNo: 22, teamName: "Code Red", leaderName: "S Vinay" },
+    { slNo: 23, teamName: "HackHer", leaderName: "Aditi Sahoo" },
+    { slNo: 24, teamName: "Decatron", leaderName: "Yashwanth M"},
+    { slNo: 25, teamName: "Algoriders", leaderName: "Gnanashree J" },
+    { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" }
   ];
 
   // Teams yet to be confirmed
   const pendingTeams = [
-    { teamName: "HackHer", leaderName: "Aditi Sahoo" },
-    { teamName: "Misal", leaderName: "Ishaan Chepurwar" },
-    { teamName: "Algoriders", leaderName: "Gnanashree J" },
-    { teamName: "A3-Coders", leaderName: "Akash H Betageri" },
-    { teamName: "Warriors", leaderName: "Sadhu Bhuvana Naga Sruthi" },
-    { teamName: "Astrobleme", leaderName: "Nilanjan Sau" },
-    { teamName: "Codesquad", leaderName: "Madhumitha S" },
-    { teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" }
+    { teamName: "Innovatehers", leaderName: "Spandana" },
+    { teamName: "InnoSphere", leaderName: "Priya M" },
+    { teamName: "Cool", leaderName: "M Kishore" },
+    { teamName: "Misal", leaderName: "Ishaan Chepurwar" }
+    
   ];
 
   // Waiting list teams
   const waitingListTeams = [
     { teamName: "Tech team", leaderName: "SHREYAS SHINDE" },
+     { teamName: "Codesquad", leaderName: "Madhumitha S" },
+    { teamName: "Astrobleme", leaderName: "Nilanjan Sau" },
     { teamName: "Codesquad", leaderName: "Madhumitha S" },
-    { teamName: "Decatron", leaderName: "Yashwanth M" },
-    { teamName: "Codex", leaderName: "Rutuja Gadhave" },
-    { teamName: "Stark Coders", leaderName: "Sisir Nellore" }
+    { teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" }
   ];
 
   const getRankIcon = (slNo: number) => {
