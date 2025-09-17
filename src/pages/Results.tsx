@@ -62,16 +62,15 @@ const Results = () => {
     { slNo: 23, teamName: "HackHer", leaderName: "Aditi Sahoo" },
     { slNo: 24, teamName: "Decatron", leaderName: "Yashwanth M"},
     { slNo: 25, teamName: "Algoriders", leaderName: "Gnanashree J" },
-    { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" }
+    { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" },
+    { slNo: 27, teamName: "Cool", leaderName: "M Kishore" },
   ];
 
   // Teams yet to be confirmed
   const pendingTeams = [
     { teamName: "Innovatehers", leaderName: "Spandana" },
     { teamName: "InnoSphere", leaderName: "Priya M" },
-    { teamName: "Cool", leaderName: "M Kishore" },
     { teamName: "Misal", leaderName: "Ishaan Chepurwar" }
-    
   ];
 
   // Waiting list teams
