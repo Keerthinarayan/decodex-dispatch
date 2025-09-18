@@ -69,6 +69,16 @@ const Results = () => {
     { slNo: 30, teamName: "Technoblade", leaderName: "Tanay Tole"}
   ];
 
+  // Teams yet to be confirmed
+  const pendingTeams = [
+    { teamName: "Innovatehers", leaderName: "Spandana" }
+  ];
+
+  // Waiting list teams
+  const waitingListTeams = [
+    { teamName: "Tech team", leaderName: "SHREYAS SHINDE" }
+  ];
+
   const getRankIcon = (slNo: number) => {
     if (slNo === 1) return <Crown className="w-6 h-6 text-vintage-gold" />;
     if (slNo === 2) return <Award className="w-6 h-6 text-vintage-brass" />;
