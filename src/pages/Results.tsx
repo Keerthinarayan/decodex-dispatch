@@ -65,19 +65,8 @@ const Results = () => {
     { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" },
     { slNo: 27, teamName: "Cool", leaderName: "M Kishore" },
     { slNo: 28, teamName: "InnoSphere", leaderName: "Priya M" },
-  ];
-
-  // Teams yet to be confirmed
-  const pendingTeams = [
-    { teamName: "Innovatehers", leaderName: "Spandana" },
-    { teamName: "Misal", leaderName: "Ishaan Chepurwar" }
-  ];
-
-  // Waiting list teams
-  const waitingListTeams = [
-    { teamName: "Tech team", leaderName: "SHREYAS SHINDE" },
-     { teamName: "Codesquad", leaderName: "Madhumitha S" },
-    { teamName: "Astrobleme", leaderName: "Nilanjan Sau" },
+    { slNo: 29, teamName: "Comrade", leaderName: "Kishan MC"},
+    { slNo: 30, teamName: "Technoblade", leaderName: "Tanay Tole"}
   ];
 
   const getRankIcon = (slNo: number) => {
