@@ -66,7 +66,7 @@ const Results = () => {
     { slNo: 27, teamName: "InnoSphere", leaderName: "Priya M" },
     { slNo: 28, teamName: "Aurora", leaderName: "Abdul Hannan" },
     { slNo: 29, teamName: "Comrade", leaderName: "Kishan MC", status: "Waiting" },
-    { slNo: 30, teamName: "TechnoBade", leaderName: "Tanay Tole", status: "Waiting" }
+    { slNo: 30, teamName: "TechnoBlade", leaderName: "Tanay Tole", status: "Waiting" }
   ];
 
   const getRankIcon = (slNo: number) => {
