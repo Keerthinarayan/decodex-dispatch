@@ -57,26 +57,16 @@ const Results = () => {
     { slNo: 18, teamName: "Tech Brawlers", leaderName: "Angel Bharadwaj" },
     { slNo: 19, teamName: "Quadcore Brains", leaderName: "Mokshith R" },
     { slNo: 20, teamName: "Illu-Minaati", leaderName: "Kushal Raj G S" },
-    { slNo: 21, teamName: "Nexus", leaderName: "Tanushrii" },
-    { slNo: 22, teamName: "Code Red", leaderName: "S Vinay" },
-    { slNo: 23, teamName: "HackHer", leaderName: "Aditi Sahoo" },
+    { slNo: 21, teamName: "HackHer", leaderName: "Aditi Sahoo" },
+    { slNo: 22, teamName: "Nexus", leaderName: "Tanushrii" },
+    { slNo: 23, teamName: "Code Red", leaderName: "S Vinay" },
     { slNo: 24, teamName: "Decatron", leaderName: "Yashwanth M"},
     { slNo: 25, teamName: "Algoriders", leaderName: "Gnanashree J" },
     { slNo: 26, teamName: "Triod", leaderName: "Manushree Mahesh Nandihal" },
-    { slNo: 27, teamName: "Cool", leaderName: "M Kishore" },
-    { slNo: 28, teamName: "InnoSphere", leaderName: "Priya M" },
-    { slNo: 29, teamName: "Comrade", leaderName: "Kishan MC"},
-    { slNo: 30, teamName: "Technoblade", leaderName: "Tanay Tole"}
-  ];
-
-  // Teams yet to be confirmed
-  const pendingTeams = [
-    { teamName: "Innovatehers", leaderName: "Spandana" }
-  ];
-
-  // Waiting list teams
-  const waitingListTeams = [
-    { teamName: "Tech team", leaderName: "SHREYAS SHINDE" }
+    { slNo: 27, teamName: "InnoSphere", leaderName: "Priya M" },
+    { slNo: 28, teamName: "Aurora", leaderName: "Abdul Hannan" },
+    { slNo: 29, teamName: "Comrade", leaderName: "Kishan MC", status: "Waiting" },
+    { slNo: 30, teamName: "TechnoBade", leaderName: "Tanay Tole", status: "Waiting" }
   ];
 
   const getRankIcon = (slNo: number) => {
@@ -126,7 +116,7 @@ const Results = () => {
         <div className="max-w-6xl mx-auto animate-vintage-appear">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-vintage-sepia mb-4">
-              Confirmed Qualified Teams
+              Qualified Teams
             </h2>
             <p className="text-vintage-brass text-base sm:text-lg">
               Listed in order of qualification
@@ -159,6 +149,12 @@ const Results = () => {
                             <User className="w-4 h-4" />
                             <span>Leader: {team.leaderName}</span>
                           </div>
+                          {team.status && (
+                            <div className="flex items-center gap-1 text-sm text-amber-700 bg-amber-100/80 px-2 py-1 rounded-full border border-amber-300/50">
+                              <AlertTriangle className="w-4 h-4" />
+                              <span>{team.status}</span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
